@@ -1,5 +1,6 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: serif;
+  font-size: larger;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
@@ -51,7 +52,7 @@ code {
 
 .Banner-link {
   font-size: 1.25rem;
-  color: white;
+  color: rgb(124, 107, 125);
   padding: 0.5rem 1rem;
 }
 
@@ -86,7 +87,7 @@ code {
 }
 
 .Tags-link {
-  color: white;
+  color: rgb(124, 107, 125);;
 }
 
 .Pagination {
@@ -120,4 +121,16 @@ code {
   font-weight: bold;
   text-decoration: none;
   display: inline-block;
+}
+
+/* My additions */
+
+h1, h2, h3, h4, strong {
+  color:  rgb(124, 107, 125);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

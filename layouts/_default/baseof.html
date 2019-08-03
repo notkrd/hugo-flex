@@ -30,10 +30,24 @@
   <main>
     <div class="u-wrapper">
       <div class="u-padding">
+  
+        <br>
+        <img style="width: 150px; height: auto; float: left; margin: 24pt 48pt 24pt 0pt; " src="{{ "/images/logo.png" | relURL }}" alt="Acacia Logo" />
+
         {{ block "main" . }}{{ end }}
+        
+        
+        {{ if .IsTranslated }}
+        {{ range .Translations }}
+        <h3><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></h3>
+        {{ end}}
+        <hr>
+        {{ end }}
+        
       </div>
     </div>
   </main>
+  
   {{ partial "footer.html" . }}
   {{ range $allJS }}
   <script type="text/javascript" src="{{ .Permalink }}" integrity="{{ .Data.Integrity }}"></script>

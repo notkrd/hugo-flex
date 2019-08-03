@@ -1,26 +1,27 @@
-params:
-  color: teal  # Any color in CSS syntax
-  width: 42rem  # Any length in CSS syntax
-  footer: Except where otherwise noted, content on this site is licensed under
-    a <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">
-    Creative Commons Attribution 4.0 International License</a>.
-  rss: To subscribe to this RSS feed, copy its address and paste it into your
-    favorite feed reader.
+# params:
+#   color: teal # Any color in CSS syntax
+#   width: 42rem  # Any length in CSS syntax
+#   footer: © 2019 Acacia Family Medical Group | <a href="">Home</a> | <a href="">Legal Notice</a> |  <a href="">General Website Disclaimer</a> |  
+#   rss: To subscribe to this RSS feed, copy its address and paste it into your
+#     favorite feed reader.
 
-menu:
-  nav:
-  - name: About
-    url: about/
-    weight: 1
-  - name: Posts
-    url: post/
-    weight: 2
-  - name: Tags
-    url: tags/
-    weight: 3
-  - name: Categories
-    url: categories/
-    weight: 4
-  - name: RSS
-    url: index.xml
-    weight: 5
+# menu:
+#   nav:
+#   - name: About Us
+#     url: about/
+#     weight: 1
+#   - name: En Español
+#     url: es/
+#     weight: 2
+#   - name: Forms
+#     url: forms/
+#     weight: 3
+#   - name: Directions
+#     url: contact/
+#     weight: 4
+#   - name: Links
+#     url: links/
+#     weight: 5
+#   - name: Policies
+#     url: policies/
+#     weight: 6

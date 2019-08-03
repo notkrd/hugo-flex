@@ -4,11 +4,18 @@
       <li class="Banner-item Banner-item--title">
         <a class="Banner-link u-clickable" href="{{ "" | absURL }}">{{ site.Title }}</a>
       </li>
+      {{ if .IsTranslated }}
+          {{ range .Translations }}
+          <li class="Banner-item">
+              <a class="Banner-link u-clickable" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+          </li>
+          {{ end}}
+      {{ end }}
       {{ range site.Menus.nav }}
       <li class="Banner-item">
         <a class="Banner-link u-clickable" href="{{ .URL | absURL }}">{{ .Name }}</a>
+        {{ end }}
       </li>
-      {{ end }}
     </ul>
   </div>
 </nav>
